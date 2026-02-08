@@ -1,12 +1,14 @@
 /**
- * @name ChatGPT Theme BetterDiscord
- * @author NickEvoX
+ * @name ChatGPT
+ * @author Nick
  * @version 1.0.0
- * @description Tema oscuro con chat gris transparente, paneles negros y header azul
+ * @description Chat gris transparente + paneles negros + header azul
  */
 
+@import url("https://raw.githubusercontent.com/NickEvoX/ChatGPT-Theme-Betterdiscord/refs/heads/main/ChatGPT.theme.css");
+
 /* =========================
-   FUENTE (LOCAL)
+   FUENTE CRUISER 2015
    ========================= */
 @font-face {
     font-family: "Cruiser 2015";
@@ -16,54 +18,57 @@
 /* =========================
    FONDO GENERAL
    ========================= */
-html,
-body,
-#app-mount {
+.appMount-2yBXZl,
+body {
     background-color: #070707 !important;
+}
+
+/* =========================
+   CHAT (GRIS DISCORD TRANSPARENTE)
+   ========================= */
+.chatContent-3KubbW,
+.messagesWrapper-RpOMA3,
+.scrollerInner-2PPAp2 {
+    background-color: rgba(54, 57, 63, 0.8) !important;
 }
 
 /* =========================
    SERVIDORES (IZQUIERDA)
    ========================= */
-nav,
-nav > ul {
+.guilds-2JjMmN {
     background-color: #050505 !important;
 }
 
 /* =========================
-   LISTA DE CANALES
+   CANALES / CHATS
    ========================= */
-aside {
+.sidebar-1tnWFu {
     background-color: #050505 !important;
 }
 
 /* =========================
-   LISTA DE USUARIOS
+   LISTA DE USUARIOS (DERECHA)
    ========================= */
-section[aria-label="Lista de miembros"],
-section[aria-label="Members"] {
+.members-3WRCEx,
+.membersWrap-3NUR2t {
     background-color: #050505 !important;
 }
 
 /* =========================
-   CHAT (GRIS TRANSPARENTE)
+   BARRA SUPERIOR NEGRA
    ========================= */
-main {
-    background-color: rgba(54, 57, 63, 0.8) !important;
-}
-
-/* =========================
-   BARRA SUPERIOR
-   ========================= */
-header {
+.container-ZMc96U,
+.themed-Hp1KC_ {
     background-color: #050505 !important;
     box-shadow: none !important;
 }
 
 /* =========================
-   TEXTO HEADER AZUL
+   TEXTO BARRA SUPERIOR AZUL
    ========================= */
-header * {
+.title-17SveM,
+.children-3xh0VB,
+.iconWrapper-2awDjA {
     font-family: "Cruiser 2015", sans-serif !important;
     color: #3a9cff !important;
 }
